@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CoffeeHouse!"
+        android:layout_centerOnParent="true"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welecome to the best coffee shop"
+        android:layout_below="@id/image"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title"
+        android:layout_marginLeft="16sp"
+        android:layout_marginBottom="-19dp"
+        android:margin_top="8sp"
+        android:text="Select your brew:"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"/>
+
+    <Button
+        android:text="Black"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:text="Normal"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
